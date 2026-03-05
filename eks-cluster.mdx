@@ -4,7 +4,7 @@
 
 - Launch Ubuntu 24.04 VM (t2.micro, 30 GB)
 
-- Connect to machine and install kubectl using below commands
+- Connect to machine and install `kubectl` using below commands
 ```
 curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/kubectl
 chmod +x ./kubectl
@@ -12,7 +12,7 @@ sudo mv ./kubectl /usr/local/bin
 kubectl version --short --client
 ```
 
-- Install AWS CLI latest version using below commands
+- Install `AWS CLI` latest version using below commands
 
 ```
 sudo apt install unzip
@@ -22,7 +22,7 @@ sudo ./aws/install
 aws --version
 ```
 
-- Install eksctl using below commands
+- Install `eksctl` using below commands
 
 ```
 curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
@@ -30,7 +30,7 @@ sudo mv /tmp/eksctl /usr/local/bin
 eksctl version
 ```
 
-### Step - 2 : Create IAM role & attach to EKS Management Host
+### Step - 2 : Create `IAM role & attach to EKS Management Host`
  - Create New Role using IAM service ( Select Usecase - ec2 )
 
  - Add below permissions for the role
